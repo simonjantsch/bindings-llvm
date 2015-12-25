@@ -15,7 +15,8 @@ library
   c-sources:
     wrapper/extra.cpp
     wrapper/HaskellPass.cpp
-  ghc-options: -cpp -pgmPcpphs -optP -D_GLIBCXX_USE_CXX11_ABI=0--cpp
+  ghc-options: CPP -pgmPcpphs -optP CPP
+  cpp-options: -D_GLIBCXX_USE_CXX11_ABI=0
   extensions:
     ForeignFunctionInterface
     CApiFFI
